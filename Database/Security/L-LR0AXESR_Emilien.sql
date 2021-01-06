@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [L-LR0AXESR\Emilien]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+

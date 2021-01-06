@@ -1,0 +1,10 @@
+﻿ALTER SERVER ROLE [sysadmin] ADD MEMBER [L-LR0AXESR\Emilien];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\SQLWriter];
+
+
+GO
+ALTER SERVER ROLE [sysadmin] ADD MEMBER [NT SERVICE\Winmgmt];
+

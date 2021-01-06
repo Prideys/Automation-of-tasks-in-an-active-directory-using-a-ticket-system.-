@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfAppTrue.ManagerWindow_NewRequest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTrue"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="New requests" Height="450" Width="800">
+    <Grid>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="419" Stroke="Black" VerticalAlignment="Top" Width="136"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="136" Height="37" Click="Logout_Click" />
+        <Button Content="Approve Group" HorizontalAlignment="Left" Margin="0,82,0,0" VerticalAlignment="Top" Width="136" Height="37" Click="ApprouveGroup_Click"/>
+        <Button Content="New User" HorizontalAlignment="Left" Margin="0,141,0,0" VerticalAlignment="Top" Width="136" Height="37" Click="NewUser_Click"/>
+        <Button Content="New requests" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" Width="136" Height="37" Background="#909090"/>
+        <ComboBox HorizontalAlignment="Left" Margin="194,55,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Group_add_description" Name="Group_request"/>
+        <TextBox HorizontalAlignment="Left" Height="122" Margin="371,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="217" Name="group_Description"/>
+        <Button Content="Request" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="632,82,0,0" Height="35" Click="Do_Request"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="443,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.378,-0.322"/>
+        <Label Content="Group" HorizontalAlignment="Left" Margin="236,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.331,-0.347"/>
+        <ComboBox HorizontalAlignment="Left" Margin="194,141,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Change_user_request" Name="Change_request"/>
+        <Label Content="Do Request for another user ? " HorizontalAlignment="Left" Margin="180,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.415"/>
+        <Label Content="Upgrade a user to Manager" HorizontalAlignment="Left" Margin="180,246,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="180,290,0,0" VerticalAlignment="Top" Width="120" Name="Upgrade_user"/>
+        <Button Content="Upgrade" HorizontalAlignment="Left" Margin="326,290,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="Upgrade_User"/>
+        <ComboBox HorizontalAlignment="Left" Margin="525,290,0,0" VerticalAlignment="Top" Width="120" Name="Delete_user"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="670,292,0,0" VerticalAlignment="Top" Width="75"  Click="Deleted_User"/>
+        <Label Content="Delete User" HorizontalAlignment="Left" Margin="551,246,0,0" VerticalAlignment="Top" />
+        <Border BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="136,212,0,0" VerticalAlignment="Top" Width="657" />
+
+    </Grid>
+</Window>
